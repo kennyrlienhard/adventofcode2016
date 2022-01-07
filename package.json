@@ -1,0 +1,68 @@
+{
+  "name": "aoc-2021",
+  "version": "0.0.1",
+  "description": "Advent of Code 2021",
+  "author": {
+    "name": "medignition AG",
+    "email": "technology@medignition.com",
+    "url": "https://medignition.com"
+  },
+  "license": "UNLICENSED",
+  "private": true,
+  "main": "main.ts",
+  "scripts": {
+    "build": "copyfiles package.json dist && copyfiles --up 1 src/emails/**/* dist && copyfiles --up 1 src/assets/**/* dist && copyfiles protos/* dist && tsc",
+    "lint": "eslint --ext .js,.ts .",
+    "check-types": "tsc",
+    "prettier": "prettier --ignore-path .eslintignore \"**/*.+(ts|js|json)\"",
+    "format": "yarn run prettier --write",
+    "check-format": "yarn run prettier --list-different",
+    "validate": "npm-run-all --parallel check-types check-format lint build",
+    "start": "NODE_PATH=./src ts-node ./src/main.ts",
+    "dev": "nodemon",
+    "test": "jest --config test/jest.config.ts",
+    "test:watch": "jest --config test/jest.config.ts --watchAll",
+    "test:coverage": "npm run test -- --coverage"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  },
+  "dependencies": {
+    "manhattan": "^1.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.4",
+    "@babel/preset-typescript": "^7.16.0",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "babel-jest": "^27.4.4",
+    "copyfiles": "^2.4.0",
+    "eslint": "^8.3.0",
+    "eslint-config-airbnb-typescript": "^16.1.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.2",
+    "eslint-plugin-jest": "^25.2.4",
+    "husky": "^7.0.2",
+    "jest": "^27.4.4",
+    "jest-watch-select-projects": "^2.0.0",
+    "jest-watch-typeahead": "^1.0.0",
+    "lint-staged": "^12.0.3",
+    "nodemon": "^2.0.12",
+    "npm-run-all": "^4.1.5",
+    "prettier": "^2.3.2",
+    "ts-jest": "^27.1.1",
+    "ts-node": "^10.2.1",
+    "typescript": "^4.4.2"
+  }
+}
