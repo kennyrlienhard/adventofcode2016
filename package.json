@@ -1,10 +1,10 @@
 {
-  "name": "aoc-2021",
+  "name": "aoc-2016",
   "version": "0.0.1",
-  "description": "Advent of Code 2021",
+  "description": "Advent of Code 2016",
   "author": {
-    "name": "medignition AG",
-    "email": "technology@medignition.com",
+    "name": "Kenny R. Lienhard",
+    "email": "lienhard@medignition.com",
     "url": "https://medignition.com"
   },
   "license": "UNLICENSED",
