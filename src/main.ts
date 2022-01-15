@@ -52,6 +52,6 @@ async function solvePuzzles(puzzlesToSolve: number[]) {
   results.forEach((answers, index) => printResult(puzzles[index].day, answers));
 }
 
-const DAYS_TO_SOLVE = [19, 20];
+const DAYS_TO_SOLVE = [19];
 
 solvePuzzles(DAYS_TO_SOLVE);
