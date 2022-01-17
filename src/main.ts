@@ -19,6 +19,7 @@ import { startNineteen } from './day19';
 import { startTwenty } from './day20';
 import { startTwentyone } from './day21';
 import { startTwentytwo } from './day22';
+import { startTwentythree } from './day23';
 
 const PUZZLES = [
   startOne,
@@ -43,6 +44,7 @@ const PUZZLES = [
   startTwenty,
   startTwentyone,
   startTwentytwo,
+  startTwentythree,
 ];
 
 function printResult(day: number, answers: (number | string)[]) {
@@ -56,6 +58,6 @@ async function solvePuzzles(puzzlesToSolve: number[]) {
   results.forEach((answers, index) => printResult(puzzles[index].day, answers));
 }
 
-const DAYS_TO_SOLVE = [22];
+const DAYS_TO_SOLVE = [12, 23];
 
 solvePuzzles(DAYS_TO_SOLVE);
