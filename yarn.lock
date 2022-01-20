@@ -1416,6 +1416,13 @@ abbrev@1:
   resolved "https://registry.yarnpkg.com/abbrev/-/abbrev-1.1.1.tgz#f8f2c887ad10bf67f634f005b6987fed3179aac8"
   integrity sha512-nne9/IiQ/hzIhY6pdDnbBtz7DjPTKrY00P/zvPSm5pOFkl6xuGrGnXn/VtTNNfNtAfZ9/1RtehkszU9qcTii0Q==
 
+abstract-pathfinder@^0.0.1:
+  version "0.0.1"
+  resolved "https://registry.yarnpkg.com/abstract-pathfinder/-/abstract-pathfinder-0.0.1.tgz#188a073885b0e363e66194e6290785c561978b9b"
+  integrity sha1-GIoHOIWw42PmYZTmKQeFxWGXi5s=
+  dependencies:
+    js-priority-queue "^0.1.5"
+
 acorn-globals@^6.0.0:
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/acorn-globals/-/acorn-globals-6.0.0.tgz#46cdd39f0f8ff08a876619b55f5ac8a6dc770b45"
@@ -3602,6 +3609,11 @@ jest@^27.4.4:
     "@jest/core" "^27.4.7"
     import-local "^3.0.2"
     jest-cli "^27.4.7"
+
+js-priority-queue@^0.1.5:
+  version "0.1.5"
+  resolved "https://registry.yarnpkg.com/js-priority-queue/-/js-priority-queue-0.1.5.tgz#f71e9b2120c91e8a1ddab3b7d347dac01d81e837"
+  integrity sha1-9x6bISDJHood2rO300fawB2B6Dc=
 
 js-tokens@^4.0.0:
   version "4.0.0"
