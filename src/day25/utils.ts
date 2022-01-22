@@ -23,10 +23,6 @@ export async function loadData(trainingData = false): Promise<ActionInterface[]>
       return { cmd, x };
     }
 
-    if (cmd === Command.Jump) {
-      return { cmd, x, y };
-    }
-
     return { cmd, x, y };
   };
 
